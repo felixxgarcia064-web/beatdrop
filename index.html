@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeatDrop - Create Amazing Beats</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>🎵 BeatDrop</h1>
+            </div>
+            <nav class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#studio">Studio</a>
+                <a href="#my-beats">My Beats</a>
+                <a href="#premium">Premium</a>
+            </nav>
+            <div class="auth-buttons">
+                <button class="btn-secondary">Login</button>
+                <button class="btn-primary">Sign Up</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Create Amazing Beats in Your Browser</h1>
+            <p>No downloads, no experience needed. Start making professional beats right now with our grid-based beat maker.</p>
+            <button class="btn-hero">Start Creating Now</button>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">50K+</span>
+                    <span class="stat-label">Beats Created</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">15K+</span>
+                    <span class="stat-label">Active Creators</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">100+</span>
+                    <span class="stat-label">Sound Packs</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beat Studio Interface -->
+    <section id="studio" class="studio">
+        <div class="studio-header">
+            <h2>Beat Studio</h2>
+            <div class="studio-controls">
+                <button class="control-btn play-btn">▶️ Play</button>
+                <button class="control-btn">⏸️ Pause</button>
+                <button class="control-btn">⏹️ Stop</button>
+                <div class="tempo-control">
+                    <label>Tempo: <span>120 BPM</span></label>
+                    <input type="range" min="60" max="180" value="120" class="tempo-slider">
+                </div>
+            </div>
+        </div>
+
+        <div class="beat-grid-container">
+            <!-- Track Controls -->
+            <div class="track-controls">
+                <div class="track-row">
+                    <span class="track-label">🥁 Kick</span>
+                    <input type="range" min="0" max="100" value="80" class="volume-slider">
+                    <button class="mute-btn">🔊</button>
+                </div>
+                <div class="track-row">
+                    <span class="track-label">🎯 Snare</span>
+                    <input type="range" min="0" max="100" value="75" class="volume-slider">
+                    <button class="mute-btn">🔊</button>
+                </div>
+                <div class="track-row">
+                    <span class="track-label">🎩 Hi-Hat</span>
+                    <input type="range" min="0" max="100" value="60" class="volume-slider">
+                    <button class="mute-btn">🔊</button>
+                </div>
+                <div class="track-row">
+                    <span class="track-label">🎸 Bass</span>
+                    <input type="range" min="0" max="100" value="70" class="volume-slider">
+                    <button class="mute-btn">🔊</button>
+                </div>
+            </div>
+
+            <!-- Beat Grid -->
+            <div class="beat-grid">
+                <!-- Kick Row -->
+                <div class="grid-row">
+                    <div class="beat-cell active"></div>
+                    <div class="beat-cell"></div>
+                    <div class="beat-cell"></div>
+                    <div class="beat-cell active"></div>
+                    <div class="beat-cell"></div>
+                    <div class="beat-cell"></div>
+                    <div class="beat-cell active"></div>
+                    <div class="beat-cell"></div>
+                    <div class="beat-cell active"></div>
+                    <div class="beat-cell"></div>
+                    <div class="beat-cell"></div>
+                    <div class="beat-cell active"></div>
+                    <div class="beat-cell"></div>
+                    <div class="beat-cell"></div>
+                    <div class="beat-cell"></div>
+                    <div class="beat-cell"></div>
+                </div>
+                <!-- Snare Row -->
+                <div class="grid-row">
+                    <div class="beat-cell"></div>
+                    <div class="beat-cell"></div>
+                    <div class="beat-cell"></div>
+                    <div class="beat-cell"></div>
+                    <div class="beat-cell active"></div>
+                    <div class="beat-cell"></div>
+                    <div class="beat-cell"></div>
+                    <div class="beat-cell"></div>
+                    <div class="beat-cell"></div>
+                    <div class="beat-cell"></div>
+                    <div class="beat-cell"></div>
+                    <div class="beat-cell"></div>
+                    <div class="beat-cell active"></div>
+                    <div class="beat-cell"></div>
+                    <div class="beat-cell"></div>
+                    <div class="beat-cell"></div>
+                </div>
+                <!-- Hi-Hat Row -->
+                <div class="grid-row">
+                    <div class="beat-cell"></div>
+                    <div class="beat-cell active"></div>
+                    <div class="beat-cell"></div>
+                    <div class="beat-cell active"></div>
+                    <div class="beat-cell"></div>
+                    <div class="beat-cell active"></div>
+                    <div class="beat-cell"></div>
+                    <div class="beat-cell active"></div>
+                    <div class="beat-cell"></div>
+                    <div class="beat-cell active"></div>
+                    <div class="beat-cell"></div>
+                    <div class="beat-cell active"></div>
+                    <div class="beat-cell"></div>
+                    <div class="beat-cell active"></div>
+                    <div class="beat-cell"></div>
+                    <div class="beat-cell active"></div>
+                </div>
+                <!-- Bass Row -->
+                <div class="grid-row">
+                    <div class="beat-cell active"></div>
+                    <div class="beat-cell"></div>
+                    <div class="beat-cell"></div>
+                    <div class="beat-cell"></div>
+                    <div class="beat-cell"></div>
+                    <div class="beat-cell"></div>
+                    <div class="beat-cell active"></div>
+                    <div class="beat-cell"></div>
+                    <div class="beat-cell"></div>
+                    <div class="beat-cell"></div>
+                    <div class="beat-cell active"></div>
+                    <div class="beat-cell"></div>
+                    <div class="beat-cell"></div>
+                    <div class="beat-cell"></div>
+                    <div class="beat-cell"></div>
+                    <div class="beat-cell"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Save/Export Section -->
+        <div class="save-export">
+            <div class="save-controls">
+                <button class="btn-secondary">💾 Save Beat</button>
+                <button class="btn-secondary">📁 Load Beat</button>
+                <button class="btn-primary">⬇️ Export Audio</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- My Beats Section -->
+    <section id="my-beats" class="my-beats">
+        <h2>My Beats</h2>
+        <div class="beats-grid">
+            <div class="beat-card">
+                <h3>Summer Vibes</h3>
+                <p>Created: March 15, 2024</p>
+                <p>Duration: 2:30</p>
+                <div class="beat-actions">
+                    <button class="btn-small">▶️ Play</button>
+                    <button class="btn-small">✏️ Edit</button>
+                    <button class="btn-small">⬇️ Export</button>
+                </div>
+            </div>
+            <div class="beat-card">
+                <h3>Trap Experiment</h3>
+                <p>Created: March 12, 2024</p>
+                <p>Duration: 1:45</p>
+                <div class="beat-actions">
+                    <button class="btn-small">▶️ Play</button>
+                    <button class="btn-small">✏️ Edit</button>
+                    <button class="btn-small">⬇️ Export</button>
+                </div>
+            </div>
+            <div class="beat-card">
+                <h3>Lo-Fi Study Beat</h3>
+                <p>Created: March 10, 2024</p>
+                <p>Duration: 3:15</p>
+                <div class="beat-actions">
+                    <button class="btn-small">▶️ Play</button>
+                    <button class="btn-small">✏️ Edit</button>
+                    <button class="btn-small">⬇️ Export</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Section -->
+    <section id="premium" class="premium">
+        <h2>Upgrade to Premium</h2>
+        <div class="pricing-cards">
+            <div class="pricing-card free">
+                <h3>Free</h3>
+                <div class="price">$0<span>/month</span></div>
+                <ul>
+                    <li>✅ Basic drum sounds</li>
+                    <li>✅ 2 tracks</li>
+                    <li>✅ Save 5 beats</li>
+                    <li>❌ Premium sound packs</li>
+                    <li>❌ Advanced effects</li>
+                </ul>
+                <button class="btn-secondary">Current Plan</button>
+            </div>
+            <div class="pricing-card premium-card">
+                <h3>Premium</h3>
+                <div class="price">$4.99<span>/month</span></div>
+                <ul>
+                    <li>✅ All sound packs</li>
+                    <li>✅ Unlimited tracks</li>
+                    <li>✅ Unlimited saves</li>
+                    <li>✅ Advanced effects</li>
+                    <li>✅ Cloud storage</li>
+                </ul>
+                <button class="btn-primary">Upgrade Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>BeatDrop</h4>
+                <p>Create amazing beats in your browser</p>
+            </div>
+            <div class="footer-section">
+                <h4>Features</h4>
+                <a href="#">Beat Maker</a>
+                <a href="#">Sound Packs</a>
+                <a href="#">Export Tools</a>
+            </div>
+            <div class="footer-section">
+                <h4>Support</h4>
+                <a href="#">Help Center</a>
+                <a href="#">Tutorials</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 BeatDrop. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
